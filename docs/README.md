@@ -36,5 +36,5 @@ This directory contains comprehensive documentation for the GxP Python Toolkit.
 ## 📞 Support
 
 - **CureVac Teams**: Contact Dr. Manuel Knott (manuel.knott@curevac.com)
-- **Internal Slack**: #gxp-toolkit-support
+- **Microsoft Teams**: GxP Toolkit Support channel
 - **Documentation Issues**: Submit via internal issue tracker

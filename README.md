@@ -329,7 +329,7 @@ pytest tests/compliance/ -v
 - **Regulatory Affairs** - Compliance guidance and validation
 
 ### **Communication**
-- **Slack Channel**: #gxp-toolkit-support
+- **Microsoft Teams**: GxP Toolkit Support channel
 - **Email**: manuel.knott@curevac.com
 - **Documentation Wiki**: Internal CureVac confluence
 
@@ -375,7 +375,7 @@ This toolkit provides **implementation patterns** for GxP compliance. CureVac te
 
 1. **Check the documentation** - Comprehensive guides and examples
 2. **Search existing issues** - Common problems and solutions
-3. **Ask in Slack** - #gxp-toolkit-support channel
+3. **Ask in Teams** - GxP Toolkit Support channel
 4. **Contact the maintainer** - manuel.knott@curevac.com
 5. **Schedule a consultation** - Book time with Dr. Knott
 
