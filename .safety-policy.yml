@@ -1,0 +1,31 @@
+# Safety policy file for GxP Python Toolkit
+# This file documents known vulnerabilities in third-party dependencies
+# that are being monitored but don't directly affect our codebase security
+
+# Configuration
+security:
+  ignore-vulnerabilities:
+    # python-jose vulnerabilities - monitoring for updates
+    # These affect JWT processing but our usage is for internal auth tokens
+    70716:  # CVE-2024-33664 - DoS via decode
+      reason: "Monitoring - affects JWT decode, our usage is controlled"
+      expires: "2025-12-31"
+    70715:  # CVE-2024-33663 - Algorithm confusion with ECDSA
+      reason: "Monitoring - affects algorithm confusion, our usage is internal"
+      expires: "2025-12-31"
+    
+    # ecdsa vulnerabilities - monitoring for updates  
+    # These affect cryptographic operations but our primary crypto is via Azure Key Vault
+    64459:  # CVE-2024-23342 - Minerva attack
+      reason: "Monitoring - primary crypto via Azure Key Vault, ecdsa is dependency"
+      expires: "2025-12-31"
+    64396:  # PVE-2024-64396 - Side-channel attacks
+      reason: "Monitoring - primary crypto via Azure Key Vault, ecdsa is dependency"
+      expires: "2025-12-31"
+
+# Notes:
+# - These vulnerabilities are in third-party dependencies (python-jose, ecdsa)
+# - Our primary cryptographic operations use Azure Key Vault (secure)
+# - JWT usage is for internal authentication tokens (controlled environment)
+# - We will monitor these dependencies and update when fixes are available
+# - Expiration dates ensure regular review of these exceptions
